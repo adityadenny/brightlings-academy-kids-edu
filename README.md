@@ -33,3 +33,18 @@ A premium preschool homepage built with **HTML + Tailwind CSS (CDN)**, designed 
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/brightlings-academy-homepage.git
+
+2. Navigate to the project folder:
+
+bash
+cd brightlings-academy-homepage
+Open index.html in your browser to preview the site.
+
+📌 Roadmap
+[ ] Add responsive mobile menu
+[ ] Expand FAQ content (multi-language support)
+[ ] Integrate enrollment form with backend
+[ ] Optimize animations for reduced motion preferences
+
+📄 License
+This project is licensed under the MIT License. You are free to use, modify, and distribute with attribution.
