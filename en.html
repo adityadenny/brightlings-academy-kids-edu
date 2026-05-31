@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Brightlings Academy — Taman kanak-kanak & PAUD premium yang menumbuhkan rasa ingin tahu melalui pembelajaran berbasis bermain. Daftar sekarang.">
-<meta property="og:title" content="Brightlings Academy | Pendidikan Anak Usia Dini Premium">
-<meta property="og:description" content="Di mana pikiran kecil tumbuh dan bermimpi besar. Pembelajaran terinspirasi Montessori untuk usia 1–6 tahun.">
+<meta name="description" content="Brightlings Academy — Premium preschool & kindergarten nurturing curious minds through play-based learning. Enroll today.">
+<meta property="og:title" content="Brightlings Academy | Premium Early Childhood Education">
+<meta property="og:description" content="Where little minds grow big. Montessori-inspired learning for ages 1–6.">
 <meta property="og:type" content="website">
-<title>Brightlings Academy | Pendidikan Anak Usia Dini Premium</title>
+<title>Brightlings Academy | Premium Early Childhood Education</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -36,11 +36,11 @@ tailwind.config = {
 <body class="bg-warm text-charcoal overflow-x-hidden">
 
 <!-- ============ NAVBAR ============ -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-warm/90 backdrop-blur-md border-b border-orange-100" role="navigation" aria-label="Navigasi Utama">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-warm/90 backdrop-blur-md border-b border-orange-100" role="navigation" aria-label="Main navigation">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 lg:h-20">
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-2 group" aria-label="Halaman Utama Brightlings Academy">
+      <a href="#" class="flex items-center gap-2 group" aria-label="Brightlings Academy home">
         <div class="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="white"/>
@@ -55,27 +55,27 @@ tailwind.config = {
 
       <!-- Desktop Nav -->
       <div class="hidden lg:flex items-center gap-8">
-        <a href="#programs" class="nav-link">Program</a>
-        <a href="#about" class="nav-link">Tentang</a>
-        <a href="#teachers" class="nav-link">Guru</a>
-        <a href="#campus" class="nav-link">Kampus</a>
-        <a href="#news" class="nav-link">Berita</a>
-        <a href="#contact" class="nav-link">Kontak</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#teachers" class="nav-link">Teachers</a>
+        <a href="#campus" class="nav-link">Campus</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
 
       <!-- CTA + Lang Switcher -->
       <div class="hidden lg:flex items-center gap-3">
-        <a href="en.html" class="text-sm font-700 text-charcoal-600 hover:text-primary transition-colors px-2 py-1 rounded-lg" aria-label="Beralih ke Bahasa Inggris">EN</a>
+        <span class="text-sm font-700 text-primary" aria-label="Currently viewing English">EN</span>
         <span class="text-charcoal-400 text-sm">|</span>
-        <span class="text-sm font-700 text-primary" aria-label="Sedang menampilkan Bahasa Indonesia">ID</span>
+        <a href="index.html" class="text-sm font-700 text-charcoal-600 hover:text-primary transition-colors px-2 py-1 rounded-lg" aria-label="Switch to Bahasa Indonesia">ID</a>
         <a href="#admissions" class="btn-primary text-sm px-5 py-2.5 ml-2">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Daftar Sekarang
+          Inquire Now
         </a>
       </div>
 
       <!-- Mobile Hamburger -->
-      <button id="hamburger" class="lg:hidden p-2 rounded-xl hover:bg-orange-50 transition-colors" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button id="hamburger" class="lg:hidden p-2 rounded-xl hover:bg-orange-50 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="2.5" aria-hidden="true">
           <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
@@ -86,15 +86,15 @@ tailwind.config = {
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="lg:hidden bg-warm border-t border-orange-100 px-4 pb-4" role="menu">
     <div class="flex flex-col gap-1 pt-2">
-      <a href="#programs" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Program</a>
-      <a href="#about" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Tentang</a>
-      <a href="#teachers" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Guru</a>
-      <a href="#campus" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Kampus</a>
-      <a href="#news" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Berita</a>
-      <a href="#contact" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Kontak</a>
+      <a href="#programs" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Programs</a>
+      <a href="#about" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">About</a>
+      <a href="#teachers" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Teachers</a>
+      <a href="#campus" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Campus</a>
+      <a href="#news" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">News</a>
+      <a href="#contact" class="py-3 px-4 font-700 text-charcoal hover:text-primary hover:bg-orange-50 rounded-xl transition-colors" role="menuitem">Contact</a>
       <div class="flex gap-2 mt-2">
-        <a href="#admissions" class="btn-primary flex-1 justify-center text-sm">Daftar Sekarang</a>
-        <a href="#visit" class="btn-outline flex-1 justify-center text-sm">Kunjungi Kampus</a>
+        <a href="#admissions" class="btn-primary flex-1 justify-center text-sm">Inquire Now</a>
+        <a href="#visit" class="btn-outline flex-1 justify-center text-sm">Book Visit</a>
       </div>
     </div>
   </div>
@@ -114,24 +114,24 @@ tailwind.config = {
     <div>
       <div class="fade-up inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-700 mb-6">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        Pendaftaran Dibuka 2025–2026
+        Enrollment Open 2025–2026
       </div>
       <h1 id="hero-heading" class="fade-up fade-up-delay-1 font-heading text-5xl sm:text-6xl lg:text-7xl font-700 leading-tight text-charcoal mb-6">
-        Tempat Pikiran<br>
-        <span class="text-primary">Kecil</span> Tumbuh,<br>
-        <span class="text-secondary">Bermimpi</span> Besar
+        Where Little<br>
+        <span class="text-primary">Minds</span> Grow<br>
+        <span class="text-secondary">Big</span> Dreams
       </h1>
       <p class="fade-up fade-up-delay-2 text-lg text-charcoal-600 leading-relaxed mb-8 max-w-lg">
-        Lingkungan belajar terinspirasi Montessori tempat anak usia 1–6 tahun menjelajahi dunia melalui rasa ingin tahu, kreativitas, dan bermain. Dipercaya oleh 500+ keluarga.
+        A Montessori-inspired learning environment where children aged 1–6 discover the world through curiosity, creativity, and play. Trusted by 500+ families across the city.
       </p>
       <div class="fade-up fade-up-delay-3 flex flex-wrap gap-4">
         <a href="#admissions" class="btn-primary">
-          Daftar Sekarang
+          Apply for Enrollment
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="#visit" class="btn-outline">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Jadwalkan Kunjungan
+          Book a Campus Visit
         </a>
       </div>
       <!-- Trust signals -->
@@ -142,7 +142,7 @@ tailwind.config = {
             <div class="w-8 h-8 rounded-full bg-secondary/20 border-2 border-white flex items-center justify-center text-xs font-700 text-secondary">B</div>
             <div class="w-8 h-8 rounded-full bg-accent/20 border-2 border-white flex items-center justify-center text-xs font-700 text-accent">C</div>
           </div>
-          <span class="text-sm font-600 text-charcoal-600">500+ keluarga bahagia</span>
+          <span class="text-sm font-600 text-charcoal-600">500+ happy families</span>
         </div>
         <div class="flex items-center gap-1">
           <svg width="16" height="16" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -150,7 +150,7 @@ tailwind.config = {
           <svg width="16" height="16" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="16" height="16" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="16" height="16" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <span class="text-sm font-600 text-charcoal-600 ml-1">Rating 4.9 / 5</span>
+          <span class="text-sm font-600 text-charcoal-600 ml-1">4.9 / 5 rating</span>
         </div>
       </div>
     </div>
@@ -168,17 +168,17 @@ tailwind.config = {
               <circle cx="32" cy="20" r="8" fill="white" opacity="0.9"/>
             </svg>
           </div>
-          <span class="text-charcoal-400 text-sm font-600">Foto Anak Bahagia</span>
-          <span class="text-charcoal-400/60 text-xs">(Aset Gambar Utama)</span>
+          <span class="text-charcoal-400 text-sm font-600">Happy Children Photo</span>
+          <span class="text-charcoal-400/60 text-xs">(Replace with real imagery)</span>
         </div>
         <!-- Overlay badge -->
         <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
           <div class="flex items-center justify-between">
             <div>
-              <p class="font-heading text-lg font-600 text-charcoal">Pendaftaran Dibuka!</p>
-              <p class="text-sm text-charcoal-600">Tahun Ajaran 2025–2026</p>
+              <p class="font-heading text-lg font-600 text-charcoal">Now Enrolling!</p>
+              <p class="text-sm text-charcoal-600">Academic Year 2025–2026</p>
             </div>
-            <a href="#admissions" class="btn-primary text-sm px-4 py-2" aria-label="Mulai pendaftaran">Daftar</a>
+            <a href="#admissions" class="btn-primary text-sm px-4 py-2" aria-label="Start enrollment application">Apply</a>
           </div>
         </div>
       </div>
@@ -189,8 +189,8 @@ tailwind.config = {
           <svg width="24" height="24" viewBox="0 0 24 24" fill="#22C55E" aria-hidden="true"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm3.5-7.5l-4.5 4.5-2-2-1.5 1.5L11 18.5l6-6-1.5-1.5z"/></svg>
         </div>
         <div>
-          <p class="font-heading font-600 text-sm text-charcoal">Terakreditasi</p>
-          <p class="text-xs text-charcoal-400">Kementerian Pendidikan</p>
+          <p class="font-heading font-600 text-sm text-charcoal">Accredited</p>
+          <p class="text-xs text-charcoal-400">Ministry of Education</p>
         </div>
       </div>
       <div class="absolute -right-4 bottom-1/3 bg-white rounded-2xl shadow-xl p-4 float-anim-3 hidden sm:flex items-center gap-3 z-10" aria-hidden="true">
@@ -198,8 +198,8 @@ tailwind.config = {
           <svg width="24" height="24" viewBox="0 0 24 24" fill="#0EA5E9" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
         </div>
         <div>
-          <p class="font-heading font-600 text-sm text-charcoal">Open House</p>
-          <p class="text-xs text-charcoal-400">Setiap Hari Sabtu</p>
+          <p class="font-heading font-600 text-sm text-charcoal">Open Days</p>
+          <p class="text-xs text-charcoal-400">Every Saturday</p>
         </div>
       </div>
     </div>
@@ -208,24 +208,24 @@ tailwind.config = {
 
 <!-- ============ STATS COUNTER ============ -->
 <section class="py-16 bg-charcoal" aria-labelledby="stats-heading">
-  <h2 id="stats-heading" class="sr-only">Statistik Sekolah</h2>
+  <h2 id="stats-heading" class="sr-only">School Statistics</h2>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="text-center fade-up">
         <p class="font-heading text-5xl lg:text-6xl font-700 text-primary" data-count="500">500<span class="text-primary/70">+</span></p>
-        <p class="text-white/70 font-600 mt-2">Siswa Bahagia</p>
+        <p class="text-white/70 font-600 mt-2">Happy Students</p>
       </div>
       <div class="text-center fade-up fade-up-delay-1">
         <p class="font-heading text-5xl lg:text-6xl font-700 text-secondary" data-count="25">25<span class="text-secondary/70">+</span></p>
-        <p class="text-white/70 font-600 mt-2">Guru Berpengalaman</p>
+        <p class="text-white/70 font-600 mt-2">Expert Teachers</p>
       </div>
       <div class="text-center fade-up fade-up-delay-2">
         <p class="font-heading text-5xl lg:text-6xl font-700 text-accent" data-count="12">12</p>
-        <p class="text-white/70 font-600 mt-2">Tahun Keunggulan</p>
+        <p class="text-white/70 font-600 mt-2">Years of Excellence</p>
       </div>
       <div class="text-center fade-up fade-up-delay-3">
         <p class="font-heading text-5xl lg:text-6xl font-700 text-warm-100" data-count="98">98<span class="text-warm-100/70">%</span></p>
-        <p class="text-white/70 font-600 mt-2">Kepuasan Orang Tua</p>
+        <p class="text-white/70 font-600 mt-2">Parent Satisfaction</p>
       </div>
     </div>
   </div>
@@ -235,9 +235,9 @@ tailwind.config = {
 <section id="about" class="py-20 lg:py-28 bg-warm" aria-labelledby="why-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 fade-up">
-      <span class="inline-block bg-secondary/10 text-secondary font-700 px-4 py-2 rounded-full text-sm mb-4">Mengapa Brightlings</span>
-      <h2 id="why-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Mengapa Orang Tua Memilih Kami</h2>
-      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto leading-relaxed">Kami memadukan filosofi Montessori terbaik, pedagogi modern, dan lingkungan hangat yang penuh kasih sayang untuk membantu setiap anak berkembang.</p>
+      <span class="inline-block bg-secondary/10 text-secondary font-700 px-4 py-2 rounded-full text-sm mb-4">Why Brightlings</span>
+      <h2 id="why-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Why Parents Choose Us</h2>
+      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto leading-relaxed">We combine the best of Montessori philosophy, modern pedagogy, and a warm, nurturing environment to help every child thrive.</p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -246,8 +246,8 @@ tailwind.config = {
         <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="#F97316" aria-hidden="true"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zM18.82 9L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
         </div>
-        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Kurikulum Terinspirasi Montessori</h3>
-        <p class="text-charcoal-600 leading-relaxed text-sm">Eksplorasi mandiri dengan pencapaian belajar terstruktur. Setiap kegiatan dirancang untuk mendukung perkembangan kognitif, emosional, dan sosial.</p>
+        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Montessori-Inspired Curriculum</h3>
+        <p class="text-charcoal-600 leading-relaxed text-sm">Child-led exploration with structured learning milestones. Every activity is intentionally designed to support cognitive, emotional, and social development.</p>
       </div>
 
       <!-- Card 2 -->
@@ -255,8 +255,8 @@ tailwind.config = {
         <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-5">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="#22C55E" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
         </div>
-        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Ukuran Kelas Kecil</h3>
-        <p class="text-charcoal-600 leading-relaxed text-sm">Maksimal 12 anak per kelas. Rasio guru dan siswa yang sangat rendah (1:6) memastikan setiap anak mendapatkan perhatian personal yang tulus.</p>
+        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Small Class Sizes</h3>
+        <p class="text-charcoal-600 leading-relaxed text-sm">Maximum 12 children per class. Our low teacher-to-student ratio (1:6) ensures every child receives personal attention and individualized care.</p>
       </div>
 
       <!-- Card 3 -->
@@ -264,8 +264,8 @@ tailwind.config = {
         <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="#0EA5E9" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
         </div>
-        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Kampus Aman & Nyaman</h3>
-        <p class="text-charcoal-600 leading-relaxed text-sm">CCTV 24/7, akses biometrik, petugas keamanan terlatih, serta lingkungan ramah anak. Keselamatan buah hati Anda adalah prioritas utama kami.</p>
+        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Safe & Secure Campus</h3>
+        <p class="text-charcoal-600 leading-relaxed text-sm">24/7 CCTV, biometric entry, trained security personnel, and a fully childproofed environment. Your child's safety is our highest priority.</p>
       </div>
 
       <!-- Card 4 -->
@@ -273,8 +273,8 @@ tailwind.config = {
         <div class="w-14 h-14 rounded-2xl bg-warm-100 flex items-center justify-center mb-5">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="#D97706" aria-hidden="true"><path d="M11 7H9V5h2v2zm0 4H9V9h2v2zm0 4H9v-2h2v2zm8-12H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
         </div>
-        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Program Dwibahasa (Bilingual)</h3>
-        <p class="text-charcoal-600 leading-relaxed text-sm">Bahasa Inggris dan Bahasa Indonesia sejak hari pertama. Pendidikan bilingual terbukti memberi keunggulan kognitif jangka panjang bagi anak.</p>
+        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Bilingual Program</h3>
+        <p class="text-charcoal-600 leading-relaxed text-sm">English and Bahasa Indonesia instruction from day one. Research-backed bilingual education gives your child a lifelong cognitive advantage.</p>
       </div>
 
       <!-- Card 5 -->
@@ -282,8 +282,8 @@ tailwind.config = {
         <div class="w-14 h-14 rounded-2xl bg-pink-50 flex items-center justify-center mb-5">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="#EC4899" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
         </div>
-        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Perkembangan Holistik</h3>
-        <p class="text-charcoal-600 leading-relaxed text-sm">Seni, musik, gerak tubuh, alam, dan STEM diintegrasikan setiap minggu. Kami membimbing anak secara utuh — intelektual, emosional, dan fisik.</p>
+        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Holistic Development</h3>
+        <p class="text-charcoal-600 leading-relaxed text-sm">Arts, music, movement, nature, and STEM woven throughout the week. We develop the whole child — intellectually, emotionally, and physically.</p>
       </div>
 
       <!-- Card 6 -->
@@ -291,8 +291,8 @@ tailwind.config = {
         <div class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center mb-5">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="#8B5CF6" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
         </div>
-        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Komunikasi Orang Tua Transparan</h3>
-        <p class="text-charcoal-600 leading-relaxed text-sm">Laporan harian digital, pembaruan aplikasi orang tua, dan rapat kemajuan bulanan. Anda selalu terhubung dengan perkembangan buah hati Anda.</p>
+        <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Transparent Parent Communication</h3>
+        <p class="text-charcoal-600 leading-relaxed text-sm">Daily digital reports, parent app updates, monthly progress meetings. You're always informed and included in your child's learning journey.</p>
       </div>
     </div>
   </div>
@@ -302,79 +302,79 @@ tailwind.config = {
 <section id="programs" class="py-20 lg:py-28 bg-orange-50/50" aria-labelledby="programs-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 fade-up">
-      <span class="inline-block bg-primary/10 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Program Kami</span>
-      <h2 id="programs-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Program Pembelajaran</h2>
-      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto">Dari langkah pertama hingga persiapan masuk SD — kami menyediakan program terbaik untuk setiap tumbuh kembang anak.</p>
+      <span class="inline-block bg-primary/10 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Our Programs</span>
+      <h2 id="programs-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Learning Programs</h2>
+      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto">From first steps to school readiness — we have the perfect program for every stage of early childhood.</p>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <!-- Nursery -->
-      <article class="program-card fade-up group" tabindex="0" aria-label="Program Nursery untuk usia 1-2 tahun">
+      <article class="program-card fade-up group" tabindex="0" aria-label="Nursery program for ages 1-2">
         <div class="w-full h-36 rounded-2xl bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center mb-5">
           <div class="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="#F97316" aria-hidden="true"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V8z"/></svg>
           </div>
         </div>
-        <div class="inline-block bg-primary/10 text-primary text-xs font-700 px-3 py-1 rounded-full mb-3">Usia 1–2 Tahun</div>
+        <div class="inline-block bg-primary/10 text-primary text-xs font-700 px-3 py-1 rounded-full mb-3">Ages 1–2</div>
         <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Nursery</h3>
-        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Pengasuhan lembut dan penuh kasih bagi pembelajar termuda kita. Fokus pada eksplorasi sensorik, pengenalan bahasa, dan rasa percaya diri awal.</p>
+        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Gentle, nurturing care for your youngest learner. Focus on sensory exploration, language development, and building trust.</p>
         <a href="#admissions" class="text-primary font-700 text-sm flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
-          Pelajari Lebih Lanjut
+          Learn More
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </article>
 
       <!-- Playgroup -->
-      <article class="program-card fade-up fade-up-delay-1 group" tabindex="0" aria-label="Program Playgroup untuk usia 2-3 tahun">
+      <article class="program-card fade-up fade-up-delay-1 group" tabindex="0" aria-label="Playgroup program for ages 2-3">
         <div class="w-full h-36 rounded-2xl bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center mb-5">
           <div class="w-20 h-20 rounded-full bg-secondary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="#22C55E" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
           </div>
         </div>
-        <div class="inline-block bg-secondary/10 text-secondary text-xs font-700 px-3 py-1 rounded-full mb-3">Usia 2–3 Tahun</div>
+        <div class="inline-block bg-secondary/10 text-secondary text-xs font-700 px-3 py-1 rounded-full mb-3">Ages 2–3</div>
         <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Playgroup</h3>
-        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Sosialisasi awal, ekspresi kreatif, dan kemampuan bahasa lewat aktivitas berbasis bermain yang terarah serta sesi diskusi lingkaran cerita.</p>
+        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Social play, creative expression, and early language skills through structured play-based activities and circle time.</p>
         <a href="#admissions" class="text-secondary font-700 text-sm flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
-          Pelajari Lebih Lanjut
+          Learn More
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </article>
 
       <!-- Preschool -->
-      <article class="program-card fade-up fade-up-delay-2 group" tabindex="0" aria-label="Program Prasekolah untuk usia 3-4 tahun">
+      <article class="program-card fade-up fade-up-delay-2 group" tabindex="0" aria-label="Preschool program for ages 3-4">
         <div class="w-full h-36 rounded-2xl bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center mb-5">
           <div class="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="#0EA5E9" aria-hidden="true"><path d="M11 7H9V5h2v2zm4 0h-2V5h2v2zM7 7H5V5h2v2zm8 8H9v-2h6v2zm2-4H7v-2h10v2zm2-4H5V5h14v2z"/></svg>
           </div>
         </div>
-        <div class="inline-block bg-accent/10 text-accent text-xs font-700 px-3 py-1 rounded-full mb-3">Usia 3–4 Tahun</div>
+        <div class="inline-block bg-accent/10 text-accent text-xs font-700 px-3 py-1 rounded-full mb-3">Ages 3–4</div>
         <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Preschool</h3>
-        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Pengenalan membaca & berhitung awal, serta berpikir kritis melalui proyek langsung yang interaktif, bercerita, dan kerja kelompok.</p>
+        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Pre-literacy, numeracy, and critical thinking through hands-on projects, storytelling, and collaborative learning.</p>
         <a href="#admissions" class="text-accent font-700 text-sm flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
-          Pelajari Lebih Lanjut
+          Learn More
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </article>
 
       <!-- Kindergarten -->
-      <article class="program-card fade-up fade-up-delay-3 group" tabindex="0" aria-label="Program TK untuk usia 5-6 tahun">
+      <article class="program-card fade-up fade-up-delay-3 group" tabindex="0" aria-label="Kindergarten program for ages 5-6">
         <div class="w-full h-36 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center mb-5">
           <div class="w-20 h-20 rounded-full bg-purple-200/50 flex items-center justify-center group-hover:scale-110 transition-transform">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="#8B5CF6" aria-hidden="true"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
           </div>
         </div>
-        <div class="inline-block bg-purple-100 text-purple-600 text-xs font-700 px-3 py-1 rounded-full mb-3">Usia 5–6 Tahun</div>
+        <div class="inline-block bg-purple-100 text-purple-600 text-xs font-700 px-3 py-1 rounded-full mb-3">Ages 5–6</div>
         <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Kindergarten</h3>
-        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Program kesiapan sekolah dasar dengan persiapan akademis matang: membaca, menulis, berhitung, sains dasar, dan pembentukan karakter sosial mandiri.</p>
+        <p class="text-charcoal-600 text-sm leading-relaxed mb-4">School-readiness program with full academic preparation — reading, writing, math, science, and social skills for confident learners.</p>
         <a href="#admissions" class="text-purple-600 font-700 text-sm flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
-          Pelajari Lebih Lanjut
+          Learn More
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </article>
     </div>
 
     <div class="text-center mt-10 fade-up">
-      <a href="#admissions" class="btn-primary">Lihat Semua Jadwal & Program</a>
+      <a href="#admissions" class="btn-primary">View All Programs & Schedules</a>
     </div>
   </div>
 </section>
@@ -383,34 +383,34 @@ tailwind.config = {
 <section class="py-20 lg:py-28 bg-warm" aria-labelledby="philosophy-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
     <div class="fade-up">
-      <span class="inline-block bg-secondary/10 text-secondary font-700 px-4 py-2 rounded-full text-sm mb-6">Filosofi Kami</span>
-      <h2 id="philosophy-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-6">Belajar Melalui <span class="text-primary">Keajaiban</span></h2>
-      <p class="text-charcoal-600 leading-relaxed mb-6">Kami percaya setiap anak terlahir dengan rasa ingin tahu alami yang luar biasa. Tugas kami bukanlah menjejali mereka dengan pengetahuan hafalan, melainkan memicu rasa cinta mereka untuk terus belajar.</p>
-      <p class="text-charcoal-600 leading-relaxed mb-8">Pendekatan kami memadukan metode Montessori yang mandiri dengan kreativitas Reggio Emilia serta penemuan berbasis bermain — menciptakan lingkungan ramah yang berpusat sepenuhnya pada anak.</p>
+      <span class="inline-block bg-secondary/10 text-secondary font-700 px-4 py-2 rounded-full text-sm mb-6">Our Philosophy</span>
+      <h2 id="philosophy-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-6">Learning Through <span class="text-primary">Wonder</span></h2>
+      <p class="text-charcoal-600 leading-relaxed mb-6">We believe every child is born curious. Our role is not to fill them with knowledge, but to ignite their natural love for learning and give them the tools to explore the world with confidence.</p>
+      <p class="text-charcoal-600 leading-relaxed mb-8">Our approach blends Montessori self-direction with Reggio Emilia creativity and play-based inquiry — creating a truly child-centered environment.</p>
       <div class="flex flex-col gap-4">
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
           </div>
-          <p class="text-charcoal-600">Eksplorasi mandiri didampingi oleh pendidik profesional</p>
+          <p class="text-charcoal-600">Child-led exploration with educator scaffolding</p>
         </div>
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center flex-shrink-0 mt-0.5">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#22C55E" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
           </div>
-          <p class="text-charcoal-600">Kurikulum terintegrasi STEAM + Seni Kreatif</p>
+          <p class="text-charcoal-600">Integrated STEAM + arts curriculum</p>
         </div>
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 rounded-full bg-accent/15 flex items-center justify-center flex-shrink-0 mt-0.5">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#0EA5E9" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
           </div>
-          <p class="text-charcoal-600">Fokus pada kecerdasan emosional dan ketahanan diri</p>
+          <p class="text-charcoal-600">Emotional intelligence and resilience-building</p>
         </div>
         <div class="flex items-start gap-4">
           <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#8B5CF6" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
           </div>
-          <p class="text-charcoal-600">Pembelajaran luar ruangan berbasis alam setiap hari</p>
+          <p class="text-charcoal-600">Nature-based outdoor learning every day</p>
         </div>
       </div>
     </div>
@@ -419,25 +419,25 @@ tailwind.config = {
       <div class="grid grid-cols-2 gap-4">
         <div class="space-y-4">
           <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 aspect-square flex items-center justify-center">
-            <span class="text-4xl" role="img" aria-label="Kelas seni">🎨</span>
+            <span class="text-4xl" role="img" aria-label="Art class">🎨</span>
           </div>
           <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-green-100 to-green-50 aspect-video flex items-center justify-center">
-            <span class="text-4xl" role="img" aria-label="Waktu membaca">📚</span>
+            <span class="text-4xl" role="img" aria-label="Reading time">📚</span>
           </div>
         </div>
         <div class="space-y-4 mt-8">
           <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-sky-100 to-sky-50 aspect-video flex items-center justify-center">
-            <span class="text-4xl" role="img" aria-label="Eksplorasi sains">🔬</span>
+            <span class="text-4xl" role="img" aria-label="Science exploration">🔬</span>
           </div>
           <div class="rounded-3xl overflow-hidden bg-gradient-to-br from-purple-100 to-purple-50 aspect-square flex items-center justify-center">
-            <span class="text-4xl" role="img" aria-label="Bermain alam">🌿</span>
+            <span class="text-4xl" role="img" aria-label="Outdoor play">🌿</span>
           </div>
         </div>
       </div>
       <!-- Overlay badge -->
       <div class="absolute -bottom-4 -right-4 bg-charcoal text-white rounded-2xl px-5 py-4 shadow-xl">
         <p class="font-heading text-3xl font-700 text-primary">12+</p>
-        <p class="text-white/70 text-sm font-600">Tahun mengasuh<br>generasi hebat</p>
+        <p class="text-white/70 text-sm font-600">Years of nurturing<br>young minds</p>
       </div>
     </div>
   </div>
@@ -447,52 +447,52 @@ tailwind.config = {
 <section id="campus" class="py-20 lg:py-28 bg-orange-50/40" aria-labelledby="facilities-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 fade-up">
-      <span class="inline-block bg-accent/10 text-accent font-700 px-4 py-2 rounded-full text-sm mb-4">Kampus Kami</span>
-      <h2 id="facilities-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Fasilitas Kelas Dunia</h2>
-      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto">Ruang belajar indah yang aman, terencana, dan dirancang khusus untuk memenuhi kenyamanan eksplorasi anak-anak.</p>
+      <span class="inline-block bg-accent/10 text-accent font-700 px-4 py-2 rounded-full text-sm mb-4">Our Campus</span>
+      <h2 id="facilities-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">World-Class Facilities</h2>
+      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto">Purpose-built spaces designed with children in mind — safe, stimulating, and beautiful.</p>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white rounded-3xl overflow-hidden fade-up group cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform origin-center overflow-hidden">🏫</div>
         <div class="p-6">
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Kelas yang Terang</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed">Ruang berlimpah cahaya alami, dilengkapi alat peraga Montessori, sudut baca nyaman, serta area kreasi anak.</p>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Bright Classrooms</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed">Natural-light filled, Montessori-equipped rooms with child-height shelving, reading nooks, and creative corners.</p>
         </div>
       </div>
       <div class="bg-white rounded-3xl overflow-hidden fade-up fade-up-delay-1 group cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform origin-center overflow-hidden">🌳</div>
         <div class="p-6">
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Taman Bermain Alam</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed">Area terbuka luas 1.200 m² dengan struktur panjat kayu, bak pasir besar, kebun edukatif, dan area eksplorasi alam.</p>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Nature Playground</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed">1,200 sqm of outdoor space with climbing structures, sandpits, gardens, and nature exploration zones.</p>
         </div>
       </div>
       <div class="bg-white rounded-3xl overflow-hidden fade-up fade-up-delay-2 group cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform origin-center overflow-hidden">📖</div>
         <div class="p-6">
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Perpustakaan Membaca</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed">Lebih dari 2.000 koleksi buku cerita dwibahasa di ruang karpet lembut yang merangsang kecintaan membaca anak.</p>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Reading Library</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed">Over 2,000 bilingual books in a cozy library designed to inspire a love of reading from the very start.</p>
         </div>
       </div>
       <div class="bg-white rounded-3xl overflow-hidden fade-up fade-up-delay-1 group cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-gradient-to-br from-yellow-100 to-yellow-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform origin-center overflow-hidden">🎨</div>
         <div class="p-6">
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Studio Seni & Musik</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed">Studio kreatif khusus lengkap dengan instrumen alat musik ramah anak, cat, dan sarana seni visual ekspresif.</p>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Art & Music Studio</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed">Dedicated creative studio with instruments, art supplies, and digital tools for expressive learning.</p>
         </div>
       </div>
       <div class="bg-white rounded-3xl overflow-hidden fade-up fade-up-delay-2 group cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-gradient-to-br from-red-100 to-red-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform origin-center overflow-hidden">🍱</div>
         <div class="p-6">
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Dapur Nutrisi Sehat</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed">Katering makanan sehat harian bersertifikat ahli gizi, disiapkan segar di sekolah dengan jaminan bebas alergi.</p>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Nutrition Kitchen</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed">Freshly prepared, nutritionist-approved meals daily. Allergy-aware menus and cooking activity programs.</p>
         </div>
       </div>
       <div class="bg-white rounded-3xl overflow-hidden fade-up fade-up-delay-3 group cursor-pointer hover:shadow-xl transition-shadow">
         <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform origin-center overflow-hidden">🛡️</div>
         <div class="p-6">
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Pusat Medis & Keamanan</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed">Perawat sekolah yang siaga, guru bersertifikasi P3K medis anak, ruang filter udara HEPA, serta sistem pengamanan ketat.</p>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2">Health & Safety Center</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed">On-site nurse, first aid certified staff, air-filtered rooms, and comprehensive emergency protocols.</p>
         </div>
       </div>
     </div>
@@ -503,9 +503,9 @@ tailwind.config = {
 <section id="teachers" class="py-20 lg:py-28 bg-warm" aria-labelledby="teachers-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 fade-up">
-      <span class="inline-block bg-primary/10 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Pendidik Kami</span>
-      <h2 id="teachers-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Perkenalkan Guru Kami</h2>
-      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto">Tersertifikasi resmi, berpengalaman luas, dan memiliki kepedulian tulus yang besar pada tumbuh kembang buah hati Anda.</p>
+      <span class="inline-block bg-primary/10 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Our Educators</span>
+      <h2 id="teachers-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Meet Our Teachers</h2>
+      <p class="text-charcoal-600 text-lg max-w-2xl mx-auto">Certified, experienced, and deeply passionate about early childhood education. Our teachers are the heart of Brightlings.</p>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -517,8 +517,8 @@ tailwind.config = {
         </div>
         <div class="p-5">
           <h3 class="font-heading text-lg font-600 text-charcoal">Ms. Sarah Wijaya</h3>
-          <p class="text-primary text-sm font-700 mb-2">Kepala Sekolah TK</p>
-          <p class="text-charcoal-600 text-sm">M.Ed. Anak Usia Dini • 10 Tahun Pengalaman • Sertifikasi Resmi Montessori</p>
+          <p class="text-primary text-sm font-700 mb-2">Head of Kindergarten</p>
+          <p class="text-charcoal-600 text-sm">M.Ed. Early Childhood • 10 years experience • Montessori certified</p>
         </div>
       </div>
       <div class="teacher-card fade-up fade-up-delay-1" tabindex="0">
@@ -529,8 +529,8 @@ tailwind.config = {
         </div>
         <div class="p-5">
           <h3 class="font-heading text-lg font-600 text-charcoal">Mr. Budi Santoso</h3>
-          <p class="text-secondary text-sm font-700 mb-2">Guru Utama Prasekolah</p>
-          <p class="text-charcoal-600 text-sm">S.Pd. PAUD • 8 Tahun Pengalaman • Spesialisasi Pedagogi Reggio Emilia</p>
+          <p class="text-secondary text-sm font-700 mb-2">Preschool Lead Teacher</p>
+          <p class="text-charcoal-600 text-sm">S.Pd. PAUD • 8 years experience • Reggio Emilia trained</p>
         </div>
       </div>
       <div class="teacher-card fade-up fade-up-delay-2" tabindex="0">
@@ -541,8 +541,8 @@ tailwind.config = {
         </div>
         <div class="p-5">
           <h3 class="font-heading text-lg font-600 text-charcoal">Ms. Dewi Putri</h3>
-          <p class="text-accent text-sm font-700 mb-2">Guru Nursery & Playgroup</p>
-          <p class="text-charcoal-600 text-sm">B.Ed. Psikologi Perkembangan • 6 Tahun Pengalaman • Lisensi Infant Care</p>
+          <p class="text-accent text-sm font-700 mb-2">Nursery & Playgroup</p>
+          <p class="text-charcoal-600 text-sm">B.Ed. Psychology • 6 years experience • Infant care certified</p>
         </div>
       </div>
       <div class="teacher-card fade-up fade-up-delay-3" tabindex="0">
@@ -553,13 +553,13 @@ tailwind.config = {
         </div>
         <div class="p-5">
           <h3 class="font-heading text-lg font-600 text-charcoal">Ms. Rachel Lim</h3>
-          <p class="text-purple-600 text-sm font-700 mb-2">Guru Musik & Seni</p>
-          <p class="text-charcoal-600 text-sm">B.Mus. Seni Musik • 7 Tahun Pengalaman • Bersertifikat Orff Schulwerk</p>
+          <p class="text-purple-600 text-sm font-700 mb-2">Music & Arts Teacher</p>
+          <p class="text-charcoal-600 text-sm">B.Mus. • 7 years experience • Orff Schulwerk certified</p>
         </div>
       </div>
     </div>
     <div class="text-center mt-10 fade-up">
-      <a href="#teachers" class="btn-outline">Lihat Profil Seluruh Pendidik</a>
+      <a href="#teachers" class="btn-outline">Meet All Our Teachers</a>
     </div>
   </div>
 </section>
@@ -568,9 +568,9 @@ tailwind.config = {
 <section class="py-20 lg:py-28 bg-charcoal" aria-labelledby="testimonials-heading">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 fade-up">
-      <span class="inline-block bg-primary/20 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Ulasan Orang Tua</span>
-      <h2 id="testimonials-heading" class="font-heading text-4xl lg:text-5xl font-700 text-white mb-4">Apa Kata Mereka</h2>
-      <p class="text-white/60 text-lg max-w-2xl mx-auto">Ungkapan tulus dan pengalaman berharga dari keluarga yang memercayakan buah hati mereka kepada kami.</p>
+      <span class="inline-block bg-primary/20 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Parent Stories</span>
+      <h2 id="testimonials-heading" class="font-heading text-4xl lg:text-5xl font-700 text-white mb-4">What Parents Say</h2>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto">Don't take our word for it — hear from families who have trusted us with their most precious ones.</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
@@ -582,12 +582,12 @@ tailwind.config = {
           <svg width="18" height="18" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="18" height="18" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <blockquote class="text-charcoal-600 leading-relaxed mb-6 text-sm">"Brightlings mengubah putri kami sepenuhnya. Pada usia 3 tahun, dia adalah anak yang sangat pemalu — sekarang dia selalu berlari masuk sekolah dengan riang setiap pagi. Para guru tulus menyayangi anak-anak."</blockquote>
+        <blockquote class="text-charcoal-600 leading-relaxed mb-6 text-sm">"Brightlings transformed our daughter completely. At 3 years old, she was shy and anxious — now she runs into school every morning singing. The teachers genuinely love these kids."</blockquote>
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center font-heading font-600 text-primary">A</div>
           <div>
             <p class="font-heading font-600 text-charcoal text-sm">Anisa & Rama Hakim</p>
-            <p class="text-charcoal-400 text-xs">Orang Tua Zahra, Kelas Playgroup</p>
+            <p class="text-charcoal-400 text-xs">Parents of Zahra, Playgroup</p>
           </div>
         </div>
       </div>
@@ -600,12 +600,12 @@ tailwind.config = {
           <svg width="18" height="18" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="18" height="18" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <blockquote class="text-charcoal-600 leading-relaxed mb-6 text-sm">"Sebagai orang tua yang sibuk bekerja, kami butuh sekolah yang dapat dipercaya penuh. Laporan harian digital Brightlings, komunikasi terbuka, dan dedikasi hangat staf memberi kami kedamaian hati yang total."</blockquote>
+        <blockquote class="text-charcoal-600 leading-relaxed mb-6 text-sm">"As working parents, we needed somewhere we could completely trust. Brightlings' daily app updates, the open communication, and the genuine warmth of every staff member gave us total peace of mind."</blockquote>
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center font-heading font-600 text-secondary">B</div>
           <div>
             <p class="font-heading font-600 text-charcoal text-sm">Bintang & Citra Nugraha</p>
-            <p class="text-charcoal-400 text-xs">Orang Tua Arjun, Kelas Preschool</p>
+            <p class="text-charcoal-400 text-xs">Parents of Arjun, Preschool</p>
           </div>
         </div>
       </div>
@@ -618,12 +618,12 @@ tailwind.config = {
           <svg width="18" height="18" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg width="18" height="18" fill="#F97316" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <blockquote class="text-charcoal-600 leading-relaxed mb-6 text-sm">"Putra kami masuk Brightlings dengan kemampuan bicara dwibahasa yang minim. Di akhir tahun pertamanya di TK, dia sudah bisa membaca lancar dalam bahasa Inggris & Indonesia. Program bilingualnya luar biasa!"</blockquote>
+        <blockquote class="text-charcoal-600 leading-relaxed mb-6 text-sm">"My son entered Brightlings barely speaking two languages. By the end of his first year in kindergarten, he was reading in both English and Bahasa. The bilingual program is genuinely exceptional."</blockquote>
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center font-heading font-600 text-accent">D</div>
           <div>
             <p class="font-heading font-600 text-charcoal text-sm">David & Melisa Tan</p>
-            <p class="text-charcoal-400 text-xs">Orang Tua Evan, Kelas Kindergarten</p>
+            <p class="text-charcoal-400 text-xs">Parents of Evan, Kindergarten</p>
           </div>
         </div>
       </div>
@@ -636,22 +636,22 @@ tailwind.config = {
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 gap-4 fade-up">
       <div>
-        <span class="inline-block bg-secondary/10 text-secondary font-700 px-4 py-2 rounded-full text-sm mb-4">Berita Terbaru</span>
-        <h2 id="news-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal">Kabar Dari Kampus Kami</h2>
+        <span class="inline-block bg-secondary/10 text-secondary font-700 px-4 py-2 rounded-full text-sm mb-4">Latest News</span>
+        <h2 id="news-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal">From Our Campus</h2>
       </div>
-      <a href="#news" class="btn-outline text-sm whitespace-nowrap">Lihat Semua Artikel</a>
+      <a href="#news" class="btn-outline text-sm whitespace-nowrap">View All Articles</a>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
       <article class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow fade-up" tabindex="0">
         <div class="h-48 bg-gradient-to-br from-orange-100 to-yellow-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform overflow-hidden origin-center">🎉</div>
         <div class="p-6">
-          <span class="inline-block bg-primary/10 text-primary text-xs font-700 px-3 py-1 rounded-full mb-3">Kegiatan</span>
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2 group-hover:text-primary transition-colors">Karnaval Keluarga Tahunan 2025 — Hari yang Ajaib!</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Lebih dari 300 keluarga bergabung merayakan hari penuh permainan, pertunjukan bakat, dan kenangan indah. Intip kemeriahan acara terbesar tahun ini.</p>
+          <span class="inline-block bg-primary/10 text-primary text-xs font-700 px-3 py-1 rounded-full mb-3">Event</span>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2 group-hover:text-primary transition-colors">Annual Family Carnival 2025 — A Magical Day!</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Over 300 families joined us for a day of games, performances, and memories. See the highlights from our biggest event of the year.</p>
           <div class="flex items-center justify-between">
-            <span class="text-charcoal-400 text-xs">15 Mei 2025</span>
-            <span class="text-primary font-700 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Baca Selengkapnya <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            <span class="text-charcoal-400 text-xs">May 15, 2025</span>
+            <span class="text-primary font-700 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
       </article>
@@ -659,12 +659,12 @@ tailwind.config = {
       <article class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow fade-up fade-up-delay-1" tabindex="0">
         <div class="h-48 bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform overflow-hidden origin-center">🌱</div>
         <div class="p-6">
-          <span class="inline-block bg-secondary/10 text-secondary text-xs font-700 px-3 py-1 rounded-full mb-3">Pembelajaran</span>
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2 group-hover:text-secondary transition-colors">Program Kebun Baru: Belajar Bercocok Tanam Mandiri</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Kurikulum berbasis alam baru kami mengajak anak mengelola kebun sayur sekolah untuk belajar tentang ekosistem, rasa tanggung jawab, dan gizi makanan.</p>
+          <span class="inline-block bg-secondary/10 text-secondary text-xs font-700 px-3 py-1 rounded-full mb-3">Learning</span>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2 group-hover:text-secondary transition-colors">New Garden Program: Children Now Growing Their Own Food</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Our new nature-based curriculum includes a working vegetable garden where children learn about ecosystems, responsibility, and nutrition.</p>
           <div class="flex items-center justify-between">
-            <span class="text-charcoal-400 text-xs">28 April 2025</span>
-            <span class="text-secondary font-700 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Baca Selengkapnya <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            <span class="text-charcoal-400 text-xs">April 28, 2025</span>
+            <span class="text-secondary font-700 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
       </article>
@@ -672,12 +672,12 @@ tailwind.config = {
       <article class="bg-white rounded-3xl overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow fade-up fade-up-delay-2" tabindex="0">
         <div class="h-48 bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center text-5xl group-hover:scale-105 transition-transform overflow-hidden origin-center">🏆</div>
         <div class="p-6">
-          <span class="inline-block bg-accent/10 text-accent text-xs font-700 px-3 py-1 rounded-full mb-3">Prestasi</span>
-          <h3 class="font-heading text-xl font-600 text-charcoal mb-2 group-hover:text-accent transition-colors">Brightlings Menang Penghargaan PAUD Terbaik Nasional 2025</h3>
-          <p class="text-charcoal-600 text-sm leading-relaxed mb-4">Kami sangat bangga menerima kembali Penghargaan Keunggulan Pendidikan Anak Usia Dini tingkat nasional selama 3 tahun berturut-turut.</p>
+          <span class="inline-block bg-accent/10 text-accent text-xs font-700 px-3 py-1 rounded-full mb-3">Achievement</span>
+          <h3 class="font-heading text-xl font-600 text-charcoal mb-2 group-hover:text-accent transition-colors">Brightlings Wins Best Early Childhood School Award 2025</h3>
+          <p class="text-charcoal-600 text-sm leading-relaxed mb-4">We are honoured to receive the National Early Childhood Education Excellence Award for the third consecutive year.</p>
           <div class="flex items-center justify-between">
-            <span class="text-charcoal-400 text-xs">10 April 2025</span>
-            <span class="text-accent font-700 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Baca Selengkapnya <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            <span class="text-charcoal-400 text-xs">April 10, 2025</span>
+            <span class="text-accent font-700 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </div>
       </article>
@@ -689,40 +689,40 @@ tailwind.config = {
 <section class="py-20 lg:py-28 bg-orange-50/40" aria-labelledby="faq-heading">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 fade-up">
-      <span class="inline-block bg-primary/10 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">Tanya Jawab</span>
-      <h2 id="faq-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Pertanyaan & Jawaban</h2>
-      <p class="text-charcoal-600 text-lg">Segala informasi penting yang wajib Anda ketahui sebelum mendaftarkan anak.</p>
+      <span class="inline-block bg-primary/10 text-primary font-700 px-4 py-2 rounded-full text-sm mb-4">FAQ</span>
+      <h2 id="faq-heading" class="font-heading text-4xl lg:text-5xl font-700 text-charcoal mb-4">Questions & Answers</h2>
+      <p class="text-charcoal-600 text-lg">Everything you need to know before enrolling your child.</p>
     </div>
 
     <div class="space-y-3 fade-up">
       <details class="faq-item bg-white rounded-2xl overflow-hidden shadow-sm">
-        <summary>Usia berapa saja yang diterima sekolah?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
-        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Kami menerima anak-anak dari usia 1 hingga 6 tahun dalam empat program unggulan kami: Nursery (1–2 tahun), Playgroup (2–3 tahun), Preschool (3–4 tahun), dan Kindergarten (4–6 tahun). Setiap jenjang disesuaikan ketat dengan tumbuh kembang anak.</div>
+        <summary>What ages do you accept?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
+        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">We welcome children from 1 to 6 years old across our four programs: Nursery (1–2), Playgroup (2–3), Preschool (3–4), and Kindergarten (4–6). Each program is carefully designed for the specific developmental stage of that age group.</div>
       </details>
 
       <details class="faq-item bg-white rounded-2xl overflow-hidden shadow-sm">
-        <summary>Kapan jam operasional sekolah berlangsung?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
-        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Jam sekolah reguler berlangsung Senin–Jumat, pukul 07:30 – 14:00. Kami juga menyediakan layanan penitipan tambahan opsional (*Extended Care*) pukul 14:00–17:00 serta kegiatan ekstrakurikuler sore hari.</div>
+        <summary>What are your school hours?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
+        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Core school hours are Monday–Friday, 7:30 AM – 2:00 PM. We also offer optional Extended Care from 2:00–5:00 PM and After School Activities from 3:00–5:00 PM for older students.</div>
       </details>
 
       <details class="faq-item bg-white rounded-2xl overflow-hidden shadow-sm">
-        <summary>Bagaimana alur pendaftaran murid baru?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
-        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Anda dapat memulai dengan mengisi formulir pertanyaan cepat di bawah. Tim pendaftaran kami akan menghubungi Anda dalam waktu 24 jam untuk menjadwalkan tur kunjungan kampus pribadi. Setelah tur, Anda dipersilakan mengisi berkas aplikasi registrasi resmi.</div>
+        <summary>How do I enrol my child?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
+        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Start by submitting an inquiry form on this page. Our admissions team will contact you within 24 hours to schedule a campus visit. After the visit, you'll complete our application form and required documents. Admission decisions are typically made within 5–7 business days.</div>
       </details>
 
       <details class="faq-item bg-white rounded-2xl overflow-hidden shadow-sm">
-        <summary>Apakah sekolah menyediakan makan siang anak?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
-        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Ya. Kami menyediakan makan siang bergizi lengkap dan camilan sehat pagi hari yang disusun khusus oleh ahli gizi sekolah. Menu diputar bulanan, bebas bahan pemicu alergi umum, dan disiapkan segar langsung dari dapur higienis kami.</div>
+        <summary>Do you provide meals?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
+        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Yes. We provide a nutritionist-approved morning snack and full lunch daily. Our menus are rotated monthly, allergy-aware, and prepared fresh on-site. Parents receive the monthly menu in advance.</div>
       </details>
 
       <details class="faq-item bg-white rounded-2xl overflow-hidden shadow-sm">
-        <summary>Berapa rasio guru pendamping dan siswa di kelas?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
-        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Rasio kami adalah 1:6 (satu guru mendampingi enam anak) di seluruh program — jauh melebihi standar nasional minimum. Kelas dibatasi maksimal 12 anak dengan dua guru pendamping ahli di setiap kelas demi pemantauan emosi dan kognitif yang intens.</div>
+        <summary>What is the teacher-to-student ratio?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
+        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Our ratio is 1:6 (one educator to six children) across all programs — well above the national minimum standard. Classes are capped at 12 children with two educators per class, ensuring every child receives individual attention.</div>
       </details>
 
       <details class="faq-item bg-white rounded-2xl overflow-hidden shadow-sm">
-        <summary>Bagaimana bentuk komunikasi berkala sekolah dengan orang tua?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
-        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">Kami menggunakan aplikasi khusus orang tua (tersedia di iOS & Android) untuk pembaruan laporan aktivitas harian, portofolio tugas, dan foto kegiatan. Kami juga mengadakan rapat tatap muka bulanan serta memiliki kebijakan komunikasi terbuka.</div>
+        <summary>How do you communicate with parents?<span class="faq-icon text-2xl text-charcoal-400 font-300">+</span></summary>
+        <div class="px-6 pb-5 text-charcoal-600 leading-relaxed text-sm">We use a dedicated parent app (iOS & Android) for daily updates, photos, and learning reports. Monthly parent-teacher meetings are held for in-depth progress discussions. We also maintain an open-door policy and respond to all messages within same business day.</div>
       </details>
     </div>
   </div>
@@ -733,18 +733,18 @@ tailwind.config = {
   <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 shape-blob pointer-events-none" aria-hidden="true"></div>
   <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 shape-blob-2 pointer-events-none" aria-hidden="true"></div>
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-up">
-    <p class="text-white/80 font-700 text-sm tracking-widest uppercase mb-4">Kuota Kursi Terbatas</p>
-    <h2 id="cta-heading" class="font-heading text-4xl lg:text-6xl font-700 text-white mb-6">Siap Memberikan Awal<br>Terbaik Bagi Anak Anda?</h2>
-    <p class="text-white/80 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">Bergabunglah bersama 500+ keluarga yang memercayakan masa depan emas anak mereka di Brightlings Academy. Pendaftaran 2025–2026 dibuka sekarang.</p>
+    <p class="text-white/80 font-700 text-sm tracking-widest uppercase mb-4">Limited Seats Available</p>
+    <h2 id="cta-heading" class="font-heading text-4xl lg:text-6xl font-700 text-white mb-6">Ready to Give Your Child<br>the <span class="text-warm-100">Best Start?</span></h2>
+    <p class="text-white/80 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">Join over 500 families who trust Brightlings Academy. Applications for 2025–2026 are now open — secure your child's place today.</p>
     <div class="flex flex-wrap gap-4 justify-center">
       <a href="#contact" class="bg-white text-primary font-heading font-700 text-lg px-8 py-4 rounded-full hover:bg-warm hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer">
-        Daftar Sekarang
+        Apply for Enrolment
       </a>
       <a href="#visit" class="bg-white/15 backdrop-blur-sm text-white font-heading font-700 text-lg px-8 py-4 rounded-full border-2 border-white/30 hover:bg-white/25 transition-all hover:-translate-y-1 cursor-pointer">
-        Jadwalkan Kunjungan Kampus
+        Schedule a Campus Visit
       </a>
     </div>
-    <p class="text-white/60 text-sm mt-6">Bebas ikatan komitmen • Sesi tur kunjungan sekolah gratis • Respons dalam 24 jam</p>
+    <p class="text-white/60 text-sm mt-6">No commitment required • Visit is completely free • Response within 24 hours</p>
   </div>
 </section>
 
@@ -760,127 +760,127 @@ tailwind.config = {
           </div>
           <span class="font-heading text-xl font-700">Brightlings Academy</span>
         </div>
-        <p class="text-white/60 text-sm leading-relaxed mb-5">Membimbing pikiran penuh rasa ingin tahu dan membangun fondasi karakter yang kokoh sejak 2013.</p>
+        <p class="text-white/60 text-sm leading-relaxed mb-5">Nurturing curious minds and building strong foundations since 2013.</p>
         <div class="flex gap-3">
           <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
             <svg width="16" height="16" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
-            <svg width="16" height="16" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="#" aria-label="WhatsApp" class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
-            <svg width="16" height="16" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h3 class="font-heading text-lg font-600 mb-4">Tautan Langsung</h3>
-        <ul class="space-y-2.5" role="list">
-          <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Program Kami</a></li>
-          <li><a href="#about" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Tentang Kami</a></li>
-          <li><a href="#teachers" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Guru Kami</a></li>
-          <li><a href="#campus" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Fasilitas</a></li>
-          <li><a href="#admissions" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Penerimaan</a></li>
-          <li><a href="#news" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Berita & Kegiatan</a></li>
-        </ul>
-      </div>
-
-      <!-- Programs -->
-      <div>
-        <h3 class="font-heading text-lg font-600 mb-4">Program Belajar</h3>
-        <ul class="space-y-2.5" role="list">
-          <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Nursery (Usia 1–2)</a></li>
-          <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Playgroup (Usia 2–3)</a></li>
-          <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Preschool (Usia 3–4)</a></li>
-          <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Kindergarten (Usia 4–6)</a></li>
-          <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Kegiatan Ekstrakurikuler</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div id="visit">
-        <h3 class="font-heading text-lg font-600 mb-4">Hubungi Kami</h3>
-        <ul class="space-y-3" role="list">
-          <li class="flex items-start gap-3 text-sm text-white/60">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <span>Jl. Pendidikan No. 123,<br>Jakarta Selatan 12345</span>
-          </li>
-          <li class="flex items-center gap-3 text-sm text-white/60">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            <a href="mailto:hello@brightlings.edu" class="hover:text-primary transition-colors">hello@brightlings.edu</a>
-          </li>
-          <li class="flex items-center gap-3 text-sm text-white/60">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            <a href="tel:+62211234567" class="hover:text-primary transition-colors">+62 21 1234 5678</a>
-          </li>
-          <li class="flex items-center gap-3 text-sm text-white/60">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#22C55E" class="flex-shrink-0" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-            <a href="https://wa.me/6281234567890" class="hover:text-secondary transition-colors">WhatsApp Kami</a>
-          </li>
-          <li class="flex items-center gap-3 text-sm text-white/60">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13h-2V7h2v8zm4 0h-2V7h2v8z"/></svg>
-            <span>Senin–Jumat 07:00–17:00</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Inquiry form strip -->
-    <div class="bg-white/5 rounded-3xl p-8 mb-10 fade-up" aria-labelledby="inquiry-heading">
-      <h3 id="inquiry-heading" class="font-heading text-2xl font-600 text-white mb-6">Pertanyaan Cepat</h3>
-      <form class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4" novalidate aria-label="Formulir pertanyaan orang tua">
-        <div>
-          <label for="parent-name" class="block text-white/60 text-xs font-600 mb-1.5 uppercase tracking-wide">Nama Orang Tua</label>
-          <input type="text" id="parent-name" name="parent-name" placeholder="Nama lengkap Anda" required autocomplete="name"
-            class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary focus:bg-white/15 transition-colors">
-        </div>
-        <div>
-          <label for="child-age" class="block text-white/60 text-xs font-600 mb-1.5 uppercase tracking-wide">Usia Anak</label>
-          <select id="child-age" name="child-age" required
-            class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:bg-white/15 transition-colors cursor-pointer appearance-none">
-            <option value="" disabled selected class="text-charcoal bg-white">Pilih kelompok usia</option>
-            <option value="nursery" class="text-charcoal bg-white">1–2 tahun (Nursery)</option>
-            <option value="playgroup" class="text-charcoal bg-white">2–3 tahun (Playgroup)</option>
-            <option value="preschool" class="text-charcoal bg-white">3–4 tahun (Preschool)</option>
-            <option value="kindergarten" class="text-charcoal bg-white">4–6 tahun (Kindergarten)</option>
-          </select>
-        </div>
-        <div>
-          <label for="parent-phone" class="block text-white/60 text-xs font-600 mb-1.5 uppercase tracking-wide">Nomor Telepon / WA</label>
-          <input type="tel" id="parent-phone" name="parent-phone" placeholder="+62 8xx xxxx xxxx" required autocomplete="tel"
-            class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary focus:bg-white/15 transition-colors">
-        </div>
-        <div class="flex items-end">
-          <button type="submit"
-            class="w-full btn-primary justify-center"
-            aria-label="Kirim pertanyaan">
-            Kirim Pertanyaan
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          </button>
-        </div>
-      </form>
-    </div>
-
-    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-white/40 text-sm">© 2025 Brightlings Academy. Hak cipta dilindungi undang-undang.</p>
-      <div class="flex gap-6">
-        <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors cursor-pointer">Kebijakan Privasi</a>
-        <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors cursor-pointer">Syarat Ketentuan</a>
-        <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors cursor-pointer">Peta Situs</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
-   class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg hover:bg-secondary-dark hover:scale-110 transition-all cursor-pointer"
-   aria-label="Chat dengan kami di WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-</a>
-
-<script src="assets/js/app.js" defer></script>
-</body>
-</html>
+767:           </a>
+768:           <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+769:             <svg width="16" height="16" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+770:           </a>
+771:           <a href="#" aria-label="WhatsApp" class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
+772:             <svg width="16" height="16" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+773:           </a>
+774:         </div>
+775:       </div>
+776: 
+777:       <!-- Quick Links -->
+778:       <div>
+779:         <h3 class="font-heading text-lg font-600 mb-4">Quick Links</h3>
+780:         <ul class="space-y-2.5" role="list">
+781:           <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Our Programs</a></li>
+782:           <li><a href="#about" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">About Us</a></li>
+783:           <li><a href="#teachers" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Our Teachers</a></li>
+784:           <li><a href="#campus" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Facilities</a></li>
+785:           <li><a href="#admissions" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Admissions</a></li>
+786:           <li><a href="#news" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">News & Events</a></li>
+787:         </ul>
+788:       </div>
+789: 
+790:       <!-- Programs -->
+791:       <div>
+792:         <h3 class="font-heading text-lg font-600 mb-4">Programs</h3>
+793:         <ul class="space-y-2.5" role="list">
+794:           <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Nursery (Ages 1–2)</a></li>
+795:           <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Playgroup (Ages 2–3)</a></li>
+796:           <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Preschool (Ages 3–4)</a></li>
+797:           <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">Kindergarten (Ages 4–6)</a></li>
+798:           <li><a href="#programs" class="text-white/60 hover:text-primary transition-colors text-sm cursor-pointer">After School Activities</a></li>
+799:         </ul>
+800:       </div>
+801: 
+802:       <!-- Contact -->
+803:       <div id="visit">
+804:         <h3 class="font-heading text-lg font-600 mb-4">Contact Us</h3>
+805:         <ul class="space-y-3" role="list">
+806:           <li class="flex items-start gap-3 text-sm text-white/60">
+807:             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0 mt-0.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+808:             <span>Jl. Pendidikan No. 123,<br>Jakarta Selatan 12345</span>
+809:           </li>
+810:           <li class="flex items-center gap-3 text-sm text-white/60">
+811:             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+812:             <a href="mailto:hello@brightlings.edu" class="hover:text-primary transition-colors">hello@brightlings.edu</a>
+813:           </li>
+814:           <li class="flex items-center gap-3 text-sm text-white/60">
+815:             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+816:             <a href="tel:+62211234567" class="hover:text-primary transition-colors">+62 21 1234 5678</a>
+817:           </li>
+818:           <li class="flex items-center gap-3 text-sm text-white/60">
+819:             <svg width="18" height="18" viewBox="0 0 24 24" fill="#22C55E" class="flex-shrink-0" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+820:             <a href="https://wa.me/6281234567890" class="hover:text-secondary transition-colors">WhatsApp Us</a>
+821:           </li>
+822:           <li class="flex items-center gap-3 text-sm text-white/60">
+823:             <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" class="flex-shrink-0" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 13h-2V7h2v8zm4 0h-2V7h2v8z"/></svg>
+824:             <span>Mon–Fri 07:00–17:00</span>
+825:           </li>
+826:         </ul>
+827:       </div>
+828:     </div>
+829: 
+830:     <!-- Inquiry form strip -->
+831:     <div class="bg-white/5 rounded-3xl p-8 mb-10 fade-up" aria-labelledby="inquiry-heading">
+832:       <h3 id="inquiry-heading" class="font-heading text-2xl font-600 text-white mb-6">Quick Inquiry</h3>
+833:       <form class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4" novalidate aria-label="Parent inquiry form">
+834:         <div>
+835:           <label for="parent-name" class="block text-white/60 text-xs font-600 mb-1.5 uppercase tracking-wide">Parent Name</label>
+836:           <input type="text" id="parent-name" name="parent-name" placeholder="Your full name" required autocomplete="name"
+837:             class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary focus:bg-white/15 transition-colors">
+838:         </div>
+839:         <div>
+840:           <label for="child-age" class="block text-white/60 text-xs font-600 mb-1.5 uppercase tracking-wide">Child's Age</label>
+841:           <select id="child-age" name="child-age" required
+842:             class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:bg-white/15 transition-colors cursor-pointer appearance-none">
+843:             <option value="" disabled selected class="text-charcoal bg-white">Select age range</option>
+844:             <option value="nursery" class="text-charcoal bg-white">1–2 years (Nursery)</option>
+845:             <option value="playgroup" class="text-charcoal bg-white">2–3 years (Playgroup)</option>
+846:             <option value="preschool" class="text-charcoal bg-white">3–4 years (Preschool)</option>
+847:             <option value="kindergarten" class="text-charcoal bg-white">4–6 years (Kindergarten)</option>
+848:           </select>
+849:         </div>
+850:         <div>
+851:           <label for="parent-phone" class="block text-white/60 text-xs font-600 mb-1.5 uppercase tracking-wide">Phone / WhatsApp</label>
+852:           <input type="tel" id="parent-phone" name="parent-phone" placeholder="+62 8xx xxxx xxxx" required autocomplete="tel"
+853:             class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary focus:bg-white/15 transition-colors">
+854:         </div>
+855:         <div class="flex items-end">
+856:           <button type="submit"
+857:             class="w-full btn-primary justify-center"
+858:             aria-label="Submit inquiry">
+859:             Send Inquiry
+860:             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+861:           </button>
+862:         </div>
+863:       </form>
+864:     </div>
+865: 
+866:     <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+867:       <p class="text-white/40 text-sm">© 2025 Brightlings Academy. All rights reserved.</p>
+868:       <div class="flex gap-6">
+869:         <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors cursor-pointer">Privacy Policy</a>
+870:         <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors cursor-pointer">Terms of Use</a>
+871:         <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors cursor-pointer">Sitemap</a>
+872:       </div>
+873:     </div>
+874:   </div>
+875: </footer>
+876: 
+877: <!-- WhatsApp Floating Button -->
+878: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"
+879:    class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg hover:bg-secondary-dark hover:scale-110 transition-all cursor-pointer"
+880:    aria-label="Chat with us on WhatsApp">
+881:   <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+882: </a>
+883: 
+884: <script src="assets/js/app.js" defer></script>
+885: </body>
+886: </html>

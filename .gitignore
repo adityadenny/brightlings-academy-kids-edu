@@ -1,0 +1,132 @@
+# ==============================================================================
+# Standard Professional Gitignore for Modern Web Projects
+# ==============================================================================
+
+# Operating System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.trash
+.nfs*
+
+
+# IDEs and Text Editors
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+.history/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, PhpStorm)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text & TextMate
+*.sublime-project
+*.sublime-workspace
+*.tmproj
+*.tmproject
+
+# Vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+
+# Package Managers (in case Node/Npm is used in the future)
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+bower_components/
+.npm/
+.yarn/
+yarn-solid.txt
+pnpm-lock.yaml
+package-lock.json
+
+
+# Logs and Diagnostics
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.eslintcache
+.stylelintcache
+
+
+# Build, Temp and Output Directories
+# ------------------------------------------------------------------------------
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+.temp/
+temp/
+tmp/
+.docusaurus/
+.svelte-kit/
+
+
+# Environment and Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.cert
+*.pfx
+
+
+# Database & Local Testing
+# --------------------------------================================--------------
+*.db
+*.sqlite
+*.sqlite3
+.serverless/

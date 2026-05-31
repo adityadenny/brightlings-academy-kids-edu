@@ -1,0 +1,180 @@
+/*
+ * Brightlings Academy — Kids Edu Web Style
+ * Custom stylesheet for custom animations, buttons, cards, and custom scrollbar.
+ * Combined with Tailwind Play CDN in index.html.
+ */
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Fredoka', sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fade-up-delay-1 { transition-delay: 0.1s; }
+  .fade-up-delay-2 { transition-delay: 0.2s; }
+  .fade-up-delay-3 { transition-delay: 0.3s; }
+  .fade-up-delay-4 { transition-delay: 0.4s; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes float2 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(5deg); }
+  }
+  .float-anim { animation: float 4s ease-in-out infinite; }
+  .float-anim-2 { animation: float2 5s ease-in-out infinite; }
+  .float-anim-3 { animation: float 6s ease-in-out infinite 1s; }
+
+  @keyframes countUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  color: #57534E;
+  transition: color 0.2s;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 2px;
+  background: #F97316;
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+.nav-link:hover { color: #F97316; }
+.nav-link:hover::after { width: 100%; }
+
+.btn-primary {
+  background: #F97316;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  cursor: pointer;
+  will-change: transform;
+}
+.btn-primary:hover {
+  background: #EA580C;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(249,115,22,0.35);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-outline {
+  background: transparent;
+  color: #1C1917;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  border: 2px solid #1C1917;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  cursor: pointer;
+  will-change: transform;
+}
+.btn-outline:hover {
+  background: #1C1917;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.program-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  will-change: transform;
+}
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.10);
+  border-color: #F97316;
+}
+
+.teacher-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+.teacher-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+.testimonial-card:hover { transform: translateY(-3px); }
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  color: #1C1917;
+  transition: color 0.2s;
+}
+.faq-item summary:hover { color: #F97316; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item[open] summary { color: #F97316; }
+.faq-icon { transition: transform 0.25s ease; }
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+
+.shape-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.shape-blob-2 {
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FFFBF5; }
+::-webkit-scrollbar-thumb { background: #FED7AA; border-radius: 3px; }
+
+/* Mobile menu */
+#mobile-menu {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+#mobile-menu.open {
+  max-height: 400px;
+  opacity: 1;
+}
