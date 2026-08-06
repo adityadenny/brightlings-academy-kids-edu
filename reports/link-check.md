@@ -11,3 +11,4 @@ Status: ✅ All clear — no broken anchors or missing local assets found.
 ## en.html
 - Anchor links checked: 8
 - Local assets checked: 9
+
