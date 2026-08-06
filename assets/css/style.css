@@ -135,8 +135,26 @@ h1, h2, h3, h4 {
   padding: 2rem;
   transition: transform 0.2s ease;
   will-change: transform;
+  border: 2px solid transparent;
 }
 .testimonial-card:hover { transform: translateY(-3px); }
+.testimonial-card.featured {
+  border-color: #F97316;
+  box-shadow: 0 12px 32px rgba(249,115,22,0.18);
+}
+.testimonial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #F97316;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
 
 .faq-item summary {
   list-style: none;

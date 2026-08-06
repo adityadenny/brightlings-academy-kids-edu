@@ -59,6 +59,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // Quote of the Day + featured testimonial (data-driven, refreshed daily)
+  if (window.BRIGHTLINGS_DAILY && window.BRIGHTLINGS_QUOTES) {
+    const isEn = document.documentElement.lang.startsWith('en');
+    const daily = window.BRIGHTLINGS_DAILY;
+    const quote = window.BRIGHTLINGS_QUOTES[daily.quoteIndex % window.BRIGHTLINGS_QUOTES.length];
+    const qotdText = document.getElementById('qotd-text');
+    if (quote && qotdText) {
+      qotdText.textContent = isEn ? quote.en : quote.id;
+    }
+
+    const featuredCard = document.querySelector(`[data-testimonial="${daily.featuredTestimonial}"]`);
+    if (featuredCard && !featuredCard.querySelector('.testimonial-badge')) {
+      featuredCard.classList.add('featured');
+      const badge = document.createElement('span');
+      badge.className = 'testimonial-badge';
+      badge.textContent = isEn ? '⭐ Featured Story Today' : '⭐ Cerita Favorit Hari Ini';
+      featuredCard.prepend(badge);
+    }
+  }
+
   // Quick Inquiry Form submission logic
   const form = document.querySelector('form');
   if (form) {
