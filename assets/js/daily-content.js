@@ -3,7 +3,7 @@
  * via scripts/update-daily-content.js — do not edit by hand.
  */
 window.BRIGHTLINGS_DAILY = {
-  "date": "2026-08-09",
-  "quoteIndex": 11,
-  "featuredTestimonial": 2
+  "date": "2026-08-10",
+  "quoteIndex": 12,
+  "featuredTestimonial": 0
 };
