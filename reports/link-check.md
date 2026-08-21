@@ -1,6 +1,6 @@
 # Link & Asset Health Check
 
-Last checked: **2026-08-20** (UTC)
+Last checked: **2026-08-21** (UTC)
 
 Status: ✅ All clear — no broken anchors or missing local assets found.
 
