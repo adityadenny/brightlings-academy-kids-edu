@@ -3,7 +3,7 @@ name: Link & Asset Health Check
 on:
   schedule:
     # 19:07 UTC = ~02:07 WIB/Bangkok/Hanoi — runs after the content & sitemap jobs
-    - cron: '7 19 * * *'
+    - cron: '7 16 * * *'
   workflow_dispatch: {}
 
 permissions:
