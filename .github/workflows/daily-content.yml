@@ -2,10 +2,10 @@ name: Update Daily Content
 
 on:
   schedule:
-    # 18:07 UTC = ~01:07 WIB/Bangkok/Hanoi (UTC+7) — deep-night run.
+    # 15:07 UTC = ~22:07 WIB/Bangkok/Hanoi (UTC+7) — pre-peak evening run.
     # Offset a few minutes past the hour on purpose: GitHub's scheduler is
     # busiest right at :00/:30 and can queue jobs for several minutes there,
-    # so an odd minute keeps the actual run time closer to 01:00 WIB.
+    # so an odd minute keeps the actual run time closer to 22:00 WIB.
     - cron: '7 15 * * *'
   workflow_dispatch: {}
 
