@@ -6,7 +6,7 @@ on:
     # Offset a few minutes past the hour on purpose: GitHub's scheduler is
     # busiest right at :00/:30 and can queue jobs for several minutes there,
     # so an odd minute keeps the actual run time closer to 01:00 WIB.
-    - cron: '7 18 * * *'
+    - cron: '7 15 * * *'
   workflow_dispatch: {}
 
 permissions:
