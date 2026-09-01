@@ -2,7 +2,7 @@ name: Update Sitemap
 
 on:
   schedule:
-    # 18:37 UTC = ~01:37 WIB/Bangkok/Hanoi — runs ~30 min after the daily
+    # 15:37 UTC = ~22:37 WIB/Bangkok/Hanoi — runs ~30 min after the daily
     # content refresh, so lastmod reflects that day's actual content change.
     - cron: '37 15 * * *'
   workflow_dispatch: {}
